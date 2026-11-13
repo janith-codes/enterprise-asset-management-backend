@@ -1,0 +1,24 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".editorconfig" />
+    <File Path=".gitattributes" />
+    <File Path=".gitignore" />
+    <File Path="Directory.Build.props" />
+    <File Path="Directory.Packages.props" />
+    <File Path="global.json" />
+    <File Path="nuget.config" />
+    <File Path="README.md" />
+  </Folder>
+  <Folder Name="/src/" />
+  <Folder Name="/src/Bootstrapper/" />
+  <Folder Name="/src/BuildingBlocks/" />
+  <Folder Name="/src/Modules/" />
+  <Folder Name="/src/Modules/Assets/" />
+  <Folder Name="/src/Modules/Identity/" />
+  <Folder Name="/src/Modules/Maintenance/" />
+  <Folder Name="/src/Modules/Organization/" />
+  <Folder Name="/tests/" />
+  <Folder Name="/tests/ArchitectureTests/" />
+  <Folder Name="/tests/IntegrationTests/" />
+  <Folder Name="/tests/Modules/" />
+</Solution>

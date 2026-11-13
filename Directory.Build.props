@@ -1,0 +1,52 @@
+<Project>
+
+  <!--
+    Shared build settings for every project under this directory
+    (comparable to a Maven parent POM). Project files should only declare
+    what is specific to them.
+  -->
+
+  <PropertyGroup Label="Target framework and language">
+    <TargetFramework>net10.0</TargetFramework>
+    <!-- C# 14 is the default for net10.0; it is pinned here so an SDK upgrade never changes it silently. -->
+    <LangVersion>14.0</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <PropertyGroup Label="Code analysis">
+    <!-- .NET 10 analyzer rule set, "Recommended" mode. Warnings are reported but do not fail the build yet. -->
+    <AnalysisLevel>10.0-recommended</AnalysisLevel>
+    <EnableNETAnalyzers>true</EnableNETAnalyzers>
+    <!-- Report .editorconfig code-style (IDE*) rules during build, not only in the editor. -->
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+    <!--
+      Nullable warnings are always errors: they are the main reason nullable is enabled.
+      General TreatWarningsAsErrors stays off for now and will be enabled in a later milestone
+      once templates are cleaned up.
+    -->
+    <WarningsAsErrors>$(WarningsAsErrors);nullable</WarningsAsErrors>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <PropertyGroup Label="Build output and determinism">
+    <Deterministic>true</Deterministic>
+    <ContinuousIntegrationBuild Condition="'$(CI)' == 'true' or '$(GITHUB_ACTIONS)' == 'true'">true</ContinuousIntegrationBuild>
+    <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+  </PropertyGroup>
+
+  <PropertyGroup Label="NuGet security">
+    <!-- Audit direct and transitive packages for known vulnerabilities on every restore. -->
+    <NuGetAudit>true</NuGetAudit>
+    <NuGetAuditMode>all</NuGetAuditMode>
+    <NuGetAuditLevel>low</NuGetAuditLevel>
+  </PropertyGroup>
+
+  <PropertyGroup Label="Metadata">
+    <Authors>janith-codes</Authors>
+    <Product>Enterprise Asset Management</Product>
+    <RepositoryUrl>https://github.com/janith-codes/enterprise-asset-management-backend</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
+
+</Project>
