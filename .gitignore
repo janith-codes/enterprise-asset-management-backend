@@ -1,0 +1,44 @@
+
+# .NET build output
+**/bin/
+**/obj/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# VS Code
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# NuGet
+*.nupkg
+.nuget/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+secrets.json
+appsettings.Development.json
+
+# Logs
+*.log
+logs/
+
+# Test results
+TestResults/
+
+# Node.js
+node_modules/
+dist/
+.next/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Docker local data
+docker-data/
