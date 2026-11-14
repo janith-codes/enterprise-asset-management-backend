@@ -1,0 +1,17 @@
+@Eam.Api_HostAddress = http://localhost:5087
+
+### Liveness probe
+GET {{Eam.Api_HostAddress}}/health/live
+
+### OpenAPI document (Development only)
+GET {{Eam.Api_HostAddress}}/openapi/v1.json
+Accept: application/json
+
+### Unknown route returns ProblemDetails (404)
+GET {{Eam.Api_HostAddress}}/api/v1/does-not-exist
+Accept: application/json
+
+### CORS preflight from the development frontend origin
+OPTIONS {{Eam.Api_HostAddress}}/api/v1/assets
+Origin: http://localhost:5173
+Access-Control-Request-Method: GET

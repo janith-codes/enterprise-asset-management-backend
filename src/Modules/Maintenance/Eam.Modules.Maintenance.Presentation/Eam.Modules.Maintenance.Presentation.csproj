@@ -1,6 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Eam.Modules.Maintenance.Application\Eam.Modules.Maintenance.Application.csproj" />
     <ProjectReference Include="..\Eam.Modules.Maintenance.Contracts\Eam.Modules.Maintenance.Contracts.csproj" />
   </ItemGroup>

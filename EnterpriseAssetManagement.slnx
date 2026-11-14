@@ -10,7 +10,9 @@
     <File Path="README.md" />
   </Folder>
   <Folder Name="/src/" />
-  <Folder Name="/src/Bootstrapper/" />
+  <Folder Name="/src/Bootstrapper/">
+    <Project Path="src/Bootstrapper/Eam.Api/Eam.Api.csproj" />
+  </Folder>
   <Folder Name="/src/BuildingBlocks/">
     <Project Path="src/BuildingBlocks/Eam.BuildingBlocks.Application/Eam.BuildingBlocks.Application.csproj" />
     <Project Path="src/BuildingBlocks/Eam.BuildingBlocks.Contracts/Eam.BuildingBlocks.Contracts.csproj" />
@@ -48,6 +50,8 @@
   </Folder>
   <Folder Name="/tests/" />
   <Folder Name="/tests/ArchitectureTests/" />
-  <Folder Name="/tests/IntegrationTests/" />
+  <Folder Name="/tests/IntegrationTests/">
+    <Project Path="tests/IntegrationTests/Eam.IntegrationTests/Eam.IntegrationTests.csproj" />
+  </Folder>
   <Folder Name="/tests/Modules/" />
 </Solution>
