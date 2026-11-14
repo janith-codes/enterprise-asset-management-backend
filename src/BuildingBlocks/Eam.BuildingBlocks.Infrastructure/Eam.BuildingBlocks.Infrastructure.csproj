@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\Eam.BuildingBlocks.Application\Eam.BuildingBlocks.Application.csproj" />
+    <ProjectReference Include="..\Eam.BuildingBlocks.Contracts\Eam.BuildingBlocks.Contracts.csproj" />
+    <ProjectReference Include="..\Eam.SharedKernel\Eam.SharedKernel.csproj" />
+  </ItemGroup>
+
+</Project>
