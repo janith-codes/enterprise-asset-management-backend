@@ -11,12 +11,41 @@
   </Folder>
   <Folder Name="/src/" />
   <Folder Name="/src/Bootstrapper/" />
-  <Folder Name="/src/BuildingBlocks/" />
+  <Folder Name="/src/BuildingBlocks/">
+    <Project Path="src/BuildingBlocks/Eam.BuildingBlocks.Application/Eam.BuildingBlocks.Application.csproj" />
+    <Project Path="src/BuildingBlocks/Eam.BuildingBlocks.Contracts/Eam.BuildingBlocks.Contracts.csproj" />
+    <Project Path="src/BuildingBlocks/Eam.BuildingBlocks.Infrastructure/Eam.BuildingBlocks.Infrastructure.csproj" />
+    <Project Path="src/BuildingBlocks/Eam.SharedKernel/Eam.SharedKernel.csproj" />
+  </Folder>
   <Folder Name="/src/Modules/" />
-  <Folder Name="/src/Modules/Assets/" />
-  <Folder Name="/src/Modules/Identity/" />
-  <Folder Name="/src/Modules/Maintenance/" />
-  <Folder Name="/src/Modules/Organization/" />
+  <Folder Name="/src/Modules/Assets/">
+    <Project Path="src/Modules/Assets/Eam.Modules.Assets.Application/Eam.Modules.Assets.Application.csproj" />
+    <Project Path="src/Modules/Assets/Eam.Modules.Assets.Contracts/Eam.Modules.Assets.Contracts.csproj" />
+    <Project Path="src/Modules/Assets/Eam.Modules.Assets.Domain/Eam.Modules.Assets.Domain.csproj" />
+    <Project Path="src/Modules/Assets/Eam.Modules.Assets.Infrastructure/Eam.Modules.Assets.Infrastructure.csproj" />
+    <Project Path="src/Modules/Assets/Eam.Modules.Assets.Presentation/Eam.Modules.Assets.Presentation.csproj" />
+  </Folder>
+  <Folder Name="/src/Modules/Identity/">
+    <Project Path="src/Modules/Identity/Eam.Modules.Identity.Application/Eam.Modules.Identity.Application.csproj" />
+    <Project Path="src/Modules/Identity/Eam.Modules.Identity.Contracts/Eam.Modules.Identity.Contracts.csproj" />
+    <Project Path="src/Modules/Identity/Eam.Modules.Identity.Domain/Eam.Modules.Identity.Domain.csproj" />
+    <Project Path="src/Modules/Identity/Eam.Modules.Identity.Infrastructure/Eam.Modules.Identity.Infrastructure.csproj" />
+    <Project Path="src/Modules/Identity/Eam.Modules.Identity.Presentation/Eam.Modules.Identity.Presentation.csproj" />
+  </Folder>
+  <Folder Name="/src/Modules/Maintenance/">
+    <Project Path="src/Modules/Maintenance/Eam.Modules.Maintenance.Application/Eam.Modules.Maintenance.Application.csproj" />
+    <Project Path="src/Modules/Maintenance/Eam.Modules.Maintenance.Contracts/Eam.Modules.Maintenance.Contracts.csproj" />
+    <Project Path="src/Modules/Maintenance/Eam.Modules.Maintenance.Domain/Eam.Modules.Maintenance.Domain.csproj" />
+    <Project Path="src/Modules/Maintenance/Eam.Modules.Maintenance.Infrastructure/Eam.Modules.Maintenance.Infrastructure.csproj" />
+    <Project Path="src/Modules/Maintenance/Eam.Modules.Maintenance.Presentation/Eam.Modules.Maintenance.Presentation.csproj" />
+  </Folder>
+  <Folder Name="/src/Modules/Organization/">
+    <Project Path="src/Modules/Organization/Eam.Modules.Organization.Application/Eam.Modules.Organization.Application.csproj" />
+    <Project Path="src/Modules/Organization/Eam.Modules.Organization.Contracts/Eam.Modules.Organization.Contracts.csproj" />
+    <Project Path="src/Modules/Organization/Eam.Modules.Organization.Domain/Eam.Modules.Organization.Domain.csproj" />
+    <Project Path="src/Modules/Organization/Eam.Modules.Organization.Infrastructure/Eam.Modules.Organization.Infrastructure.csproj" />
+    <Project Path="src/Modules/Organization/Eam.Modules.Organization.Presentation/Eam.Modules.Organization.Presentation.csproj" />
+  </Folder>
   <Folder Name="/tests/" />
   <Folder Name="/tests/ArchitectureTests/" />
   <Folder Name="/tests/IntegrationTests/" />

@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\Eam.Modules.Assets.Domain\Eam.Modules.Assets.Domain.csproj" />
+    <ProjectReference Include="..\Eam.Modules.Assets.Application\Eam.Modules.Assets.Application.csproj" />
+    <ProjectReference Include="..\Eam.Modules.Assets.Contracts\Eam.Modules.Assets.Contracts.csproj" />
+    <ProjectReference Include="..\..\..\BuildingBlocks\Eam.BuildingBlocks.Infrastructure\Eam.BuildingBlocks.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

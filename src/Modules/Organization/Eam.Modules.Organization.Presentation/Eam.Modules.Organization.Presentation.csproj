@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\Eam.Modules.Organization.Application\Eam.Modules.Organization.Application.csproj" />
+    <ProjectReference Include="..\Eam.Modules.Organization.Contracts\Eam.Modules.Organization.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>
